@@ -13,6 +13,8 @@ const accordeon = () => {
             }
 
             chContent.classList.toggle('open')
+            chButton.classList.toggle('active')
+
         })
 
 
