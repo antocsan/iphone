@@ -1,4 +1,6 @@
-const links = document.querySelectorAll('.header-menu__item a')
+const links = document.querySelectorAll('html a')
+
+seamless.polyfill();
 
 links.forEach((element) => {
     element.addEventListener('click', (event) => {
