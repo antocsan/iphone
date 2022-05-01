@@ -7,13 +7,12 @@ const accordeon = () => {
 
         chButton.addEventListener('click', () => {
             if (chContent.classList.contains('open')) {
-                chContent.classList.remove('open')
                 chContent.style.height = ''
             } else {
-                chContent.classList.add('open')
-
                 chContent.style.height = chContent.scrollHeight + 'px'
             }
+
+            chContent.classList.toggle('open')
         })
 
 
