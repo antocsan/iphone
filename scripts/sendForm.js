@@ -37,8 +37,9 @@ sendForm = () => {
             })
             .then(() => {
                 console.log('отправлено');
-            })
 
+            })
+            .then(modal.style.display = 'none', modalForm.reset())
     })
 }
 
